@@ -1,4 +1,4 @@
-"""
+
 # 27задание список
 # Прототип на мусорные баки и кольцевую дорогу.
 f = open('')
@@ -447,6 +447,8 @@ print(f(3, 9) * f(9, 20))
 # https://inf-ege.sdamgia.ru/problem?id=27765
 # https://inf-ege.sdamgia.ru/problem?id=27766
 # https://inf-ege.sdamgia.ru/problem?id=27767
+
+
 from functools import lru_cache
 
 
@@ -630,4 +632,3 @@ for x in range(2):
             for w in range(2):
                 if ((x and y) or (y and z)) == ((x <= w) and (w <= z)):
                     print(x, y, z, w)
-"""
