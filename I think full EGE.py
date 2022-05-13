@@ -8,8 +8,8 @@ price = [0] * n
 for i in range(1, n):
     price[0] += min(i, n - i) * a[i]
 cen = n // 2
-plus = sum(a[:cen])
-minus = sum(a[cen + n % 2:])
+minus = sum(a[:cen])
+plus = sum(a[cen + n % 2:])
 for i in range(1, n):
     plus = plus + a[i - 1] - a[(cen + n % 2) % n]
     minus = minus - a[i - 1] + a[cen]
