@@ -1,3 +1,43 @@
+# HOT PROBLEM
+#ЗАДАНИЕ НА ПРЯМУЮ ДОРОГУ
+
+
+f = open('')
+n = int(f.readline())
+prob =[]
+places = []
+for i in range(N):
+    x = f.readline().split()
+    places.append(int(x[0])
+    k = int(x[1])// 36
+    if int(x[1])%36 !=0:
+        k+=1
+    prob.append(x)
+price = [0]*N
+plus = 0
+minus =0
+for i in range(1,4):
+ price[0] += (places[i]- places[0] )*prob[i]
+ plus += prob[i]
+print(plus)
+for i in range(1,4):
+ minus = minus +prob[i-1]
+ R = places[i] - places[i-1]
+ price[i] = price[i-1] +(R *(minus-plus))
+ plus = plus - prob[i]
+x = price.index(min(price))
+print(place[x])
+
+
+
+
+
+
+
+
+
+
+
 
 # 27задание список
 # Прототип на мусорные баки и кольцевую дорогу.
