@@ -8,7 +8,7 @@ prob =[]
 places = []
 for i in range(N):
     x = f.readline().split()
-    places.append(int(x[0])
+    places.append(int(x[0]))
     k = int(x[1])// 36
     if int(x[1])%36 !=0:
         k+=1
