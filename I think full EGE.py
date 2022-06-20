@@ -16,11 +16,11 @@ for i in range(N):
 price = [0]*N
 plus = 0
 minus =0
-for i in range(1,4):
+for i in range(1,N):
  price[0] += (places[i]- places[0] )*prob[i]
  plus += prob[i]
 print(plus)
-for i in range(1,4):
+for i in range(1,N):
  minus = minus +prob[i-1]
  R = places[i] - places[i-1]
  price[i] = price[i-1] +(R *(minus-plus))
