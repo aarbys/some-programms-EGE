@@ -26,7 +26,7 @@ for i in range(1,N):
  price[i] = price[i-1] +(R *(minus-plus))
  plus = plus - prob[i]
 x = price.index(min(price))
-print(place[x])
+print(places[x])
 
 
 
