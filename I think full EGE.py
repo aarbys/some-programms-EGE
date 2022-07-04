@@ -6,20 +6,20 @@ f = open('')
 n = int(f.readline())
 prob =[]
 places = []
-for i in range(N):
-    x = f.readline().split()
-    places.append(int(x[0]))
-    k = int(x[1])// 36
-    if int(x[1])%36 !=0:
-        k+=1
-    prob.append(x)
 price = [0]*N
 plus = 0
 minus =0
-for i in range(1,N):
- price[0] += (places[i]- places[0] )*prob[i]
- plus += prob[i]
-print(plus)
+for i in range(N):
+    x = f.readline().split()
+    places.append(int(x[0]))
+    k = int(x[1])// 36 # 36 - количество пробирок в коробке
+    if int(x[1])%36 !=0:
+        k+=1
+    prob.append(k)
+        if i != 0:
+            price[0] += (places[i] - places[0]) * prob[i]
+            plus += prob[i]
+
 for i in range(1,N):
  minus = minus +prob[i-1]
  R = places[i] - places[i-1]
